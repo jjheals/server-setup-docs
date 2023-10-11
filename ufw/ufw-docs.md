@@ -20,7 +20,7 @@
 
 # General Syntax 
 
-##### Allow a port
+### Allow a port
 
 Allow from any external IP
 
@@ -30,7 +30,7 @@ Allow specific port from a specific external IP
 
     sudo ufw allow from [FROM_IP] to any port [PORT_NUM] 
 
-##### Set Default policies
+### Set Default policies
 
     // Implicit deny incoming 
     sudo ufw default deny incoming

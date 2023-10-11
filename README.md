@@ -16,3 +16,17 @@ Accepted arguments:
     in the script by altering the "interface" variable.
 
 See /ufw/ufw-docs.md for more information on using UFW.
+
+# /git
+
+### Script usage:
+
+Git install script 
+
+    bash ./git-install.sh
+
+Git SSH config script
+
+    bash ./git-config.sh your_email your_username /path/to/key.pub
+
+See /git/git-setup-docs.md for more information on setting up and using git.
