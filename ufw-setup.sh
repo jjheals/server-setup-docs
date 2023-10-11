@@ -24,7 +24,7 @@ for arg in "$@"; do
             ssh_from="$1"
             shift
         fi
-    elif [[ "$arg" == "-http" ]]
+    elif [[ "$arg" == "-http" ]]; then
         enable_http=true
         shift 
         if [[ $# -gt 0 && $# == "force" ]]; then 
