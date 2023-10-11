@@ -1,7 +1,7 @@
 
-# ufw-setup.sh
+# /ufw
 
-### Usage: 
+### Script usage: 
 
     bash ./ufw-setup.sh -arg1 -arg2 ...
 
@@ -14,3 +14,5 @@ Accepted arguments:
     enable http (port 80 & 443). If the literal "force" (no quotes) is given, then the internal IP routing 
     tables are modified to force HTTPS. Note that this assumes the interface "eth0", but this can be modified 
     in the script by altering the "interface" variable.
+
+See /ufw/ufw-docs.md for more information on using UFW.

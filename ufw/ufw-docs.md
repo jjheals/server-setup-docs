@@ -18,7 +18,7 @@
     sudo ufw allow 80
     sudo ufw allow 443
 
-## Generic Syntax 
+# General Syntax 
 
 ##### Allow a port
 
