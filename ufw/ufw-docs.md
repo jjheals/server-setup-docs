@@ -22,10 +22,12 @@
 
 ##### Allow a port
 
-    // Allow from any external IP
+Allow from any external IP
+
     sudo ufw allow [PORT_NUM] 
     
-    // Allow specific port from a specific external IP  
+Allow specific port from a specific external IP  
+
     sudo ufw allow from [FROM_IP] to any port [PORT_NUM] 
 
 ##### Set Default policies
