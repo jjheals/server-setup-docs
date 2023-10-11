@@ -10,9 +10,9 @@ ipv4_regex="^([0-9]{1,3}\.){3}[0-9]{1,3}$"
 # Check what to enable
 for arg in "$@" do
     # Check SSH
-    if ["$arg" == "-ssh"]; then
+    if [ "$arg" == "-ssh" ]; then
         enable_ssh=true
-    elif [[$arg =~ $ipv4_regex]]; then
+    elif [[ $arg =~ $ipv4_regex ]]; then
         ssh_from="$arg"
     fi 
 done
@@ -23,7 +23,7 @@ sudo apt install ufw
 sudo ufw enable 
 
 if [[$enable_ssh]]; then
-    if [[ssh_from =~ $ipv4_regex]]; then
+    if [[ ssh_from =~ $ipv4_regex ]]; then
         sudo ufw allow from $ssh_from to any port 22
     else 
         sudo ufw allow 22
