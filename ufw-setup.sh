@@ -17,8 +17,8 @@ for arg in "$@"; do
     fi 
 done
 
-sudo apt update && sudo apt upgrade
-sudo apt install ufw
+sudo apt -y update && sudo apt upgrade
+sudo apt -y install ufw
 
 sudo ufw enable 
 
